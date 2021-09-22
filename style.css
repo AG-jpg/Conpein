@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  text-decoration: none;
+  margin: 0px auto;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  list-style: none;
+}
+
+/*Nav Bar*/
+nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+nav .menu {
+  height: auto;
+  margin: 20px;
+}
+nav #logoTop {
+  width: 30%;
+}
+
+nav #bar {
+  width: 70%;
+}
+nav ul {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  color: #041e59;
+  text-align: center;
+  align-items: center;
+}
+nav ul li a, nav ul li a:focus, nav ul li a:active {
+  text-decoration: none;
+  color: inherit;
+}
+nav ul li a:hover {
+  color: #e2a4cb;
+}
+nav img {
+  width: auto;
+  height: 60px;
+}
+
+.fas {
+  color: #e2a4cb;
+  margin-right: 10px;
+}
+
+/*Mobile Nav Bar*/
+#burger {
+  visibility: hidden;
+}
+#burger .mainmenu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 20;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: top 1s ease;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+#burger .mainmenu .closemenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.mainmenu li {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#logoM {
+  width: 95%;
+}
+
+#burgerM {
+  width: 5%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+#burgerM .fas {
+  width: 50px;
+  height: auto;
+  color: #041e59;
+}
+
+/*Hero Banner*/
+.wrapper{
+  width: 100%;
+  min-height:800px;
+  display: flex;
+  align-items: center;
+  background-image: url(img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper h1{
+  margin-top: 120px;
+  color: #041e59;
+  font-size: 50px;
+  text-align: center;
+}
+
+.mobile {
+  display: none;
+}
+
+/*Page Styles*/
+.content{
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box{
+  width: 50%;
+  min-height: 700px;
+}
+
+/*Text Box*/
+#text h1{
+  margin-top: 30px;
+  text-align: center;
+  color: #78b8b0;
+}
+
+#text p{
+  width: 85%;
+  margin-top: 20px;
+}
+
+#text li{
+  width: 85%;
+}
+
+/*Pic*/
+#pic{
+  background-image: url(img/ch.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#pic2{
+  height: 100%;
+  background-image: url(img/fiscal.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#pic3{
+  height: 100%;
+  background-image: url(img/admin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#pic4{
+  height: 100%;
+  background-image: url(img/contable.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#pic5{
+  height: 100%;
+  background-image: url(img/financiero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#pic6{
+  height: 100%;
+  background-image: url(img/brand.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Responsive*/
+@media (max-width: 1100px) {
+  /*Mobile Nav bar*/
+  #burger {
+    visibility: visible;
+  }
+
+  /*Mobile Hero banner*/
+  .wrapper {
+    display: none;
+  }
+
+  .mobile {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/banner-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .mobile h1{
+    margin-top: 150px;
+    color: #041e59;
+    text-align: center;
+    font-size: 33px;
+    width: 85%;
+  }
+
+  /*Pages Styles*/
+  .content{
+    flex-direction: column;
+  }
+
+  .box{
+    width: 100%;
+  }
+}
